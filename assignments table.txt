@@ -1,0 +1,7 @@
+CREATE TABLE assignments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    filename VARCHAR(255) NOT NULL,
+    submitted_at DATETIME NOT NULL,
+    FOREIGN KEY (student_id) REFERENCES students(id)
+);
