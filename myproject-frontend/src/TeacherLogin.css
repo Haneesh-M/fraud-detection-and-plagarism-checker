@@ -1,0 +1,133 @@
+/* Full-page background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('./new1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the login container */
+.teacher-login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stylish login box */
+.login-wrapper {
+    background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 350px;
+    color: #000000; /* Black text */
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-wrapper:hover {
+    transform: scale(1.02);
+}
+
+/* Title Styling */
+.login-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000; /* Black text */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Input field container */
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px; /* Smooth rounded edges */
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000000; /* Black text */
+    transition: all 0.3s ease-in-out;
+    text-align: left; /* Ensure text inside input is left-aligned */
+    padding-left: 15px; /* Add padding for better readability */
+}
+
+/* Placeholder Styling */
+.input-box input::placeholder {
+    color: #ffffff; /* White placeholder text */
+    font-size: 14px;
+    opacity: 1; /* Ensures placeholder is fully visible */
+}
+
+/* Input field focus effect */
+.input-box input:focus {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.7);
+    transform: scale(1.03);
+}
+
+/* Gradient Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, white, white);
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, white, white);
+    transform: scale(1.08);
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+.btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Remember me and Forgot password */
+.remember-forgot, .register-link {
+    margin-top: 10px;
+}
+
+.remember-forgot a, .register-link a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.remember-forgot a:hover, .register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-wrapper {
+        width: 90%;
+        padding: 30px;
+    }
+}

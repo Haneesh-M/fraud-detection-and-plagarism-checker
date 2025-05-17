@@ -1,0 +1,86 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  margin: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container-dashboard {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Heading */
+.dashboard-container-dashboard h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f2027;
+  margin-bottom: 20px;
+}
+
+/* File Input */
+.file-input-dashboard {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Upload Button */
+.upload-button-dashboard,
+.logout-button-dashboard {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+/* Upload Button Styling */
+.upload-button-dashboard {
+  color: white;
+  background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.upload-button-dashboard:hover {
+  background: linear-gradient(to right, #0056b3, #003d80);
+}
+
+/* Logout Button Styling */
+.logout-button-dashboard {
+  color: white;
+  background: linear-gradient(to right, #d9534f, #c9302c);
+}
+
+.logout-button-dashboard:hover {
+  background: linear-gradient(to right, #c9302c, #a8231e);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .dashboard-container-dashboard {
+    width: 90%;
+  }
+}
